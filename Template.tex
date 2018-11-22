@@ -1,0 +1,169 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Beamer Presentation
+% LaTeX Template
+% Version 1.0 (10/11/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%,
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,xcolor=dvipsnames]{beamer}
+
+
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+
+
+
+\useoutertheme{miniframes} % Alternatively: miniframes, infolines, split
+\useinnertheme{circles}
+\definecolor{GopherGold}{HTML}{FFCC33}
+\definecolor{GopherMaroon}{HTML}{7A0019}
+%\usecolortheme[named=GopherGold]{structure}
+\setbeamercolor{palette primary}{bg=GopherGold,fg=GopherMaroon}
+\setbeamercolor{palette secondary}{bg=GopherGold,fg=GopherMaroon}
+%\setbeamercolor{palette tertiary}{bg=GopherMaroon,fg=GopherGold}
+%\setbeamercolor{palette quaternary}{bg=GopherMaroon,fg=GopherGold}
+\setbeamercolor{structure}{fg=GopherMaroon} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=GopherMaroon} % TOC sections
+
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=GopherMaroon,fg=white}
+\logo{\includegraphics[width=1.8in]{graphics/MHwdmk-maroon.png}\hspace{2pt}\vspace{0pt}}
+}
+
+\BeforeBeginEnvironment{block}{%
+	\setbeamercolor{block title}{fg=GopherGold,bg=GopherMaroon}
+	\setbeamercolor{block body}{fg=black, bg=GopherGold!100!white}
+}
+\setbeamertemplate{headline}{}
+\usepackage{graphicx} % Allows including images
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\makeatletter
+\usepackage{multirow}
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+\usepackage{float}
+\PassOptionsToPackage{demo}{graphicx}
+\usepackage{graphicx,wrapfig,lipsum}
+\usepackage{bibentry}
+\usepackage{algorithm}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Presentation Topic]{Gopher's Presentation} % The short title appears at the bottom of every slide, the full title is only on the title page
+\author{Author Names}
+\institute[U of M]{University of Minnesota}
+\date{\today} % Date, can be changed to a custom date
+
+\begin{document}
+
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\begin{frame}
+\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+\section{Introduction} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%---------------Slide 1---------------------------------
+\section{Methodology} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
+	\subsection{Part 1} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+\section{Solution Algorithm}
+\section{Results}
+\section{Future Work}
+%---------------Slide 2---------------------------------
+
+\begin{frame}
+\frametitle{Introduction}
+\begin{block}{minimization problem}
+	\begin{equation}
+	\begin{aligned}
+	& \underset{X}{\text{minimize}}
+	& & f(X) \\
+	& \text{subject to}
+	& &  \mathcal{A}(X) = b
+	\end{aligned}
+	\end{equation}
+\end{block}
+
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
