@@ -1,2 +1,2 @@
 # UMN-Presentation-Template
-This is a University of Minnesota presentation template. 
+This is a University of Minnesota LaTeX presentation template. 
